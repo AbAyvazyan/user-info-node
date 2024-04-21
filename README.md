@@ -48,4 +48,40 @@ docker build -t user-information .
 docker run -p 8080:8080 --env-file .env user-information
 ```
 
+# User API Endpoints
+
+## Get All Users
+### URL: /
+### Method: GET
+### Description: Retrieves information for all users.
+### Controller Method: 
+
+## Create User
+### URL: /
+### Method: POST
+### Description: Creates a new user with provided information.
+### Controller Method: createUser
+
+## Edit User Information
+### URL: /
+### Method: PUT
+### Description: Updates information for an existing user.
+### Controller Method: editUserInformation
+
+## Get Children Information
+### URL: /children
+### Method: GET
+### Description: Retrieves information about children for a specific user.
+### Controller Method: getChildren
+
+## Add Child Information
+### URL: /children
+### Method: POST
+### Description: Adds information about a child for a specific user.
+### Controller Method: addChildren
+
+## Delete Child Information
+### URL: /children
+### Method: DELETE
+### Description: Deletes information about a child for a specific user.
 
